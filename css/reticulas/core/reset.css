@@ -1,0 +1,114 @@
+/**
+ * RETICULAS CSSFRAMEWORK - reset.css
+ *
+ * @description     Removes default styling tags of HTML
+ *                  Based on Eric Meyer's work and Nicolas gallaghe:
+ *                  http://meyerweb.com/eric/tools/css/reset/
+ *                  http://necolas.github.com/normalize.css/
+ *
+ * @copyright       Copyright (C) 2009-2012, Sond3
+ * @license         CC BY-NC-SA http://creativecommons.org/licenses/by-nc-sa/3.0/es/
+ *                  http://creativecommons.org/licenses/by-nc-sa/3.0/es/legalcode.es
+ *
+ * @link            http://www.reticulas.com
+ * @info            http://vidagrafica.com - http://www.sond3.com
+ *
+ * @version         1.0
+*/
+
+
+/* 1. RESET */
+
+/* 1.1 Root element
+----------------------------------------------------------------------------- */
+html,
+
+/* 1.2 Sections 
+----------------------------------------------------------------------------- */
+body,
+section, nav, article, aside,
+h1, h2, h3, h4, h5, h6,
+hgroup, header,
+footer, address,
+
+/* 1.3 Grouping content
+----------------------------------------------------------------------------- */
+p, pre,
+blockquote,
+ol, ul, li,
+dl, dt, dd,
+figure, figcaption,
+div,
+
+/* 1.4 Text-level semantics
+----------------------------------------------------------------------------- */
+a,
+em, strong,
+small,s,
+cite, q, dfn, abbr,
+time, code, var, samp, kbd,
+sub, sup,
+i, b, u,
+mark, ruby, span,
+
+/* 1.5  Edits
+----------------------------------------------------------------------------- */
+ins, del,
+
+/* 1.6 Embedded content
+----------------------------------------------------------------------------- */
+img,
+iframe,object,
+video, audio,
+canvas,
+
+/* 1.7 Tabular data
+----------------------------------------------------------------------------- */
+table, caption, tbody, thead, tfoot, tr, td, th,
+
+/* 1.8 Forms
+----------------------------------------------------------------------------- */
+form, fieldset, legend, label, output,
+
+/* 1.9 Interactive elements
+----------------------------------------------------------------------------- */
+details, summary, menu,
+
+/* OBSOLETE FEATURES
+----------------------------------------------------------------------------- */
+applet {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/*
+	outline:0;
+	background:transparent;
+	*/
+	}
+
+/* HTML5 DISPLAY-ROLE RESET FOR OLDER BROWSERS */
+
+/* 1.2 Sections
+----------------------------------------------------------------------------- */
+section, nav, article,
+aside, hgroup, header, footer,
+
+/* 1.3 Grouping content
+----------------------------------------------------------------------------- */
+figure, figcaption,
+
+/* 1.9 Interactive elements
+----------------------------------------------------------------------------- */
+details, menu		{ display: block;}
+
+ol, ul				{ list-style: none;}
+blockquote, q 		{ quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before, q:after 	{ content: ''; content: none;}
+
+table				{ border-collapse: collapse; border-spacing: 0;}

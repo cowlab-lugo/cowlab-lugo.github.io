@@ -1,0 +1,244 @@
+/*
+@import url("../../reticulas/980-12-20/980_12_20.css");
+IMPORT GRID
+----------------------------------------------------------- */
+
+/**
+ * RETICULAS CSSFRAMEWORK - extended/cowlab.css
+ *
+ * @description     Modifies or extends the basic content
+ *                  with classes or IDs - COWLAB.ORG
+ *
+*/
+
+/* REDEFINE - Identifier defined within the folder reticulas
+----------------------------------------------------------- */
+body {
+	background-color:#1c160d;
+}
+
+h1, h2, h3       { font-weight:bold;}
+strong, b, em, i { line-height:1em;}  /* include in base ?? */
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	}
+
+/* COMMON
+----------------------------------------------------------- */
+/* #page-wrapper -> #page */
+#page{ 
+	position:absolute;
+	top:50%;
+	width:100%;
+	background-color:#ffa830; /*#CCC*/
+	color:#322109;
+	margin-top:-7.7%;
+	padding:20px 50px;
+	}
+
+	::-moz-selection { background: #75a501; color: #fff; }
+	::selection { background: #75a501; color: #fff; }
+/* IMAGES
+----------------------------------------------------------- */
+
+/* EXTENDED
+----------------------------------------------------------- */
+
+/* header*/
+#page > header {
+	float:left;
+	border-right:5px solid #41290a;
+	
+	background:url(img/imago.png) no-repeat 5px 0 ;
+	
+	padding-top:70px;
+	padding-right:20px;
+}
+	#page > header h1 {
+		letter-spacing:-.05em;
+		
+		margin-bottom:5px;
+	}
+		#page > header h1 span {
+			color:#FFF; /*#999*/
+		}
+
+	#page > header p {
+		font-size:1.250em; /* 20px */
+		
+		padding-left:3px;
+		margin-bottom:0;
+		
+	}
+
+/* intro */
+#intro {
+	margin-left:340px;
+}
+	#intro header {
+		float:left;
+		height:163px;
+		border-right:5px solid #41290a; /*#36230a*/
+	}
+		#intro header h2{
+			/*text-transform:uppercase;*/
+			top:0;
+			
+			height:163px;
+			display:table-cell;
+			vertical-align:middle;
+			
+			padding-right:20px;
+			margin-bottom:0;
+			font-size:3.125em; /* 50px */
+			letter-spacing:-.03em;
+			line-height:1em;
+			/*text-shadow: 0px 1px 1px #fbebd6;*/
+		}
+			#intro header h2 span{
+				display:block;
+			}
+		#intro  p{
+			max-width:400px;
+			height:163px;
+			display:table-cell;
+			vertical-align:middle;
+			
+			font-size:1.125em;
+			
+			padding-left:20px;
+			margin-bottom:0;
+		}
+
+/* footer */
+footer {
+	clear:both;
+	position:absolute;
+	top:105%;
+	padding-left:3px;
+	color:#ffa830;
+}
+
+/* MEDIA QUERIES
+----------------------------------------------------------- */
+/*
+
+@media only screen and (max-width: 1680px), 
+only screen and (max-device-width: 1680px){
+
+}
+
+@media only screen and (max-width: 1280px), 
+only screen and (max-device-width: 1280px){
+
+}
+*/
+@media only screen and (max-width: 1024px), 
+only screen and (max-device-width: 1024px){
+	
+	#page { top:40%;}
+	
+		#intro header h2{
+			font-size:2.250em;
+		}
+		#intro p {
+			font-size:1em;
+		}
+}
+@media only screen and (max-width: 940px), 
+only screen and (max-device-width: 940px){
+	
+	#page {
+		top:30%;
+		padding:20px 25px;
+	}
+	#intro { 
+		height:163px;
+		display:table-cell;
+		vertical-align:middle;
+		padding-left:20px;
+	}
+		#intro header{
+			height:auto;
+			display:table-cell;
+			vertical-align:middle;
+			
+			border:none;
+			
+			font-size:1.250em;
+			margin-bottom:10px;
+			
+		}
+			#intro header h2{
+				font-size:1.375em;
+				height:auto;
+				margin-bottom:0;
+				padding-right:0;
+			}
+				#intro header h2 span{
+					display:inline-block;
+					margin-bottom:0;
+				}
+			#intro p{
+				clear:both;
+				float:none;
+				height:auto;
+				display:inline-block;
+				padding:0;
+			}
+
+}
+@media only screen and (max-width: 720px), 
+only screen and (max-device-width: 720px){
+
+#page { 	
+	top:0;	
+	padding:10px;
+	margin-top:0%;
+}
+	#page > header {
+		float:none; 
+		display:block;
+		padding-top:80px;
+		padding-right:0px;
+		padding-bottom:10px;
+	
+		margin-bottom:10px;
+		text-align:center;
+		border:none;
+		border-bottom:3px solid #41290a;
+		background-position:center top;
+	}
+	#intro {
+		display:block;
+		height:auto;
+		float:none;
+		margin-left:0px; 
+		margin-bottom:0;
+		padding:0px;
+		text-align:center;
+	}
+		#intro header { 
+			display:block; 
+			width:100%; 
+		}
+			#intro header h2{
+				display:block; 
+				text-align:center;
+			}
+	
+	footer  { 
+		position:relative; 
+		top:45px;
+		text-align:center; 
+		padding-left:0px;
+	}
+}
+
+
+
+
+

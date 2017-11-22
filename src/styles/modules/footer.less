@@ -1,0 +1,55 @@
+ /* Footer
+   ========================================================================== */
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	.font-size(13);
+	padding-top: 7em;
+	h4 {
+		font-weight: 300;
+		margin: 0;
+	}
+
+	ul {
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		li {
+			margin-right: 2em;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	a {
+		color: @color-corp-alt;
+		text-decoration: none;
+		&:hover {
+			color: white;
+		}
+	}
+
+	.social {
+		//transform: rotate(-90deg);
+		//transform-origin: 0% 100%;
+	}
+	.social-github {
+		a {
+			&:before {
+				display: inline-block;
+				content: "";
+				width: 25px;
+				height: 25px;
+				position: relative;
+				top: 8px;
+				margin-right: .5em;
+				background-image: url("@{path-img}/github.svg");
+				background-size: 100%;
+			}
+		}
+	}
+}

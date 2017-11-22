@@ -3,10 +3,10 @@ This is the public website for CowLab group.
 [ UNDER DEVELOPMENT ]
 
 ## Instalation
-- Download or clone master branch od this repo
+- Download or clone master branch
 - Run npm install
 
-## Run commnads
+## Commnads
 
 ```
 npm run watch

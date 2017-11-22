@@ -1,1 +1,974 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}body{background-color:#282775;color:#fff;font-family:Roboto,sans-serif;letter-spacing:.015em}.footer,.header,.meetings{position:relative}.imageback{display:block;background-color:transparent;background-repeat:no-repeat;background-size:100%;font-size:0!important;line-height:0!important;margin:0;padding:0;border:none;overflow:hidden;text-align:left;text-indent:-9999px;direction:ltr}.imageback a{width:100%;height:100%;display:block;text-decoration:none}.header{font-weight:700;margin-bottom:4em}.header p{font-size:21px;font-size:1.3125rem}.header span{color:#f05a24}.logo a{display:block;background-color:transparent;background-repeat:no-repeat;background-size:100%;font-size:0!important;line-height:0!important;margin:0;padding:0;border:none;overflow:hidden;text-align:left;text-indent:-9999px;direction:ltr;background-image:url(/img/logo.svg);width:100px;height:95px}.logo a a{width:100%;height:100%;display:block;text-decoration:none}.logo a:hover{opacity:.5}.footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;font-size:13px;font-size:.8125rem;padding-top:7em}.footer h4{font-weight:300;margin:0}.footer ul{display:-webkit-box;display:-ms-flexbox;display:flex;list-style-type:none;padding:0;margin:0}.footer ul li{margin-right:2em}.footer ul li:last-child{margin-right:0}.footer a{color:#f05a24;text-decoration:none}.footer a:hover{color:#fff}.footer .social-github a:before{display:inline-block;content:"";width:25px;height:25px;position:relative;top:8px;margin-right:.5em;background-image:url(/img/github.svg);background-size:100%}#back-shape{fill:#171643;position:absolute;left:0;top:0;height:100%}.meetings ul{list-style-type:none;padding:0;margin:0}.meetings a{text-decoration:none}.meetings h2{color:#29aae1;font-size:32px;font-size:2rem;margin-bottom:.75em}.meetings-list{display:-webkit-box;display:-ms-flexbox;display:flex}.meetings-list li{padding-right:2em;color:#29aae1;font-size:14px;font-size:.875rem}.meetings-list li span{display:block;font-size:40px;font-size:2.5rem;font-weight:700;color:#fff;margin:0}.meetings-list li.is-next a,.meetings-list li.is-next span{cursor:default;color:#f05a24}.meetings-list li.is-active:after{display:block;content:"";background-color:#fff;height:5px;width:100%;margin-top:.5em}.meetings-list a{color:#29aae1}.meetings-list a:hover span{color:#f05a24}
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);/* ==========================================================================
+   Import styles
+   ========================================================================== */
+/* Basic styles
+   ========================================================================== */
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+/* Colors
+   ========================================================================== */
+/* Media queries break points
+   ========================================================================== */
+/* xtra small, small, medium, large, xtra large */
+/* Paths
+   ========================================================================== */
+/**
+ * Generic path to images
+ *
+ * Example LESS:
+ *
+ * background-image: url("@{path-img}/my-image.jpg");
+ */
+/* ==========================================================================
+   Common styles
+   ========================================================================== */
+body {
+  background-color: #282775;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .015em;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.header,
+.meetings,
+.detail,
+.footer {
+  position: relative;
+}
+/* Fonts
+   ========================================================================== */
+/* Mixins
+   ========================================================================== */
+/* ==========================================================================
+   Font size mixin
+   ========================================================================== */
+/**
+ * Helps to write font-size in rems and pixels.
+ *
+ * You write:
+ *
+ * span {
+ *     .font-size(16);
+ * }
+ *
+ * Converts to:
+ *
+ * span {
+ *     font-size: 16px;
+ *     font-size: 1rem;
+ * }
+ */
+/* Helpers
+   ========================================================================== */
+/* ==========================================================================
+   Image Replacement
+   ========================================================================== */
+/*
+ * Replace text with images. Set with and height on your class
+ *
+ * Html example:
+ * -----------------------------------------------------------------------------
+ * <div class="imageback my-image">My image</div>
+ *
+ * .my-image {
+ *    width: 400px;
+ *    height: 200px;
+ *    background-image: url('my-image.jpg');
+ * }
+ *
+ * Less example:
+ * -----------------------------------------------------------------------------
+ * <h1 class="example"><a href="#">My example</a></h1>
+ *
+ * .example {
+ *    .imageback();
+ *    background-image: url(example.jpg);
+ *    width: 150px;
+ *    height: 100px;
+ * }
+ */
+.imageback {
+  display: block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: 0px !important;
+  line-height: 0em !important;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -9999px;
+  direction: ltr;
+}
+.imageback a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+/* Vendors
+   ========================================================================== */
+/* User interface
+   ========================================================================== */
+/* Layout
+   ========================================================================== */
+/* ==========================================================================
+   Wrappers
+   ========================================================================== */
+/**
+ * Common wrappers to use in Scms-site.
+ * To reducing css size you can use extends instead of mixins
+ * to move the selector up to the properties you wish to use.
+ *
+ * Example LESS:
+ * .myclass {
+ *      &:extend(.wrapper);
+ * }
+ */
+.wrapper,
+.wrapper-narrow {
+  display: block;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+@media (min-width: 480px) {
+  .wrapper,
+  .wrapper-narrow {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  .wrapper,
+  .wrapper-narrow {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper,
+  .wrapper-narrow {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper,
+  .wrapper-narrow {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+.wrapper-content,
+.header,
+.meetings,
+.footer,
+.detail-content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+@media (min-width: 480px) {
+  .wrapper-content,
+  .header,
+  .meetings,
+  .footer,
+  .detail-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 320px) {
+  .wrapper-narrow {
+    max-width: 740px;
+  }
+}
+/* ==========================================================================
+   Common grid layout
+   ========================================================================== */
+@media (min-width: 800px) {
+  .meetings,
+  .footer {
+    padding-left: 165px !important;
+  }
+}
+@media (min-width: 800px) {
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header  header  detail" "meetings meetings detail" "footer footer detail";
+  }
+}
+.header {
+  grid-area: header;
+}
+.meetings {
+  grid-area: meetings;
+}
+.detail {
+  grid-area: detail;
+}
+@media (min-width: 800px) {
+  .detail {
+    min-height: 100%;
+  }
+  .detail .detail-content {
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+.footer {
+  grid-area: footer;
+}
+/* Modules - Partials
+   ========================================================================== */
+/* ==========================================================================
+   Header module
+   ========================================================================== */
+.header {
+  font-weight: 700;
+}
+.header p {
+  font-size: 28px;
+  font-size: 1.75rem;
+  margin-bottom: 0;
+}
+.header span {
+  color: #f05a24;
+}
+.logo a {
+  display: block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: 0px !important;
+  line-height: 0em !important;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -9999px;
+  direction: ltr;
+  background-image: url("/img/logo.svg");
+  width: 100px;
+  height: 95px;
+}
+.logo a a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+.logo a:hover {
+  opacity: .5;
+}
+@media (min-width: 800px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .logo {
+    margin-right: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    max-width: 700px;
+  }
+}
+/* Footer
+   ========================================================================== */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.footer h4 {
+  font-weight: 300;
+  margin: 0;
+}
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer ul li {
+  margin-right: 2em;
+}
+.footer ul li:last-child {
+  margin-right: 0;
+}
+.footer a {
+  color: #f05a24;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: white;
+}
+.footer .social-github a:before {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 25px;
+  height: 25px;
+  content: "";
+  background-image: url("/img/github.svg");
+  background-size: 100%;
+}
+.footer .social-github span {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .footer .social-github span {
+    display: inline-block;
+  }
+  .footer .social-github a:before {
+    top: 8px;
+    margin-right: .5em;
+  }
+}
+/* Pages - Templates
+   ========================================================================== */
+/* ==========================================================================
+   Home template
+   ========================================================================== */
+/* Back svg
+   ========================================================================== */
+#back-shape {
+  fill: #171643;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 320px;
+}
+/* Meetings
+   ========================================================================== */
+.meetings ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.meetings a {
+  text-decoration: none;
+}
+.meetings h2 {
+  color: #29aae1;
+  font-size: 40px;
+  font-size: 2.5rem;
+  margin: 0.75em 0;
+}
+.meetings h2:after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #29aae1;
+  margin-top: .25em;
+}
+.meetings-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (min-width: 480px) {
+  .meetings-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.meetings-list li {
+  width: 48%;
+  margin-bottom: 1em;
+  color: #29aae1;
+  font-size: 14px;
+  font-size: 0.875rem;
+  /* state for the next meeting */
+}
+@media (min-width: 480px) {
+  .meetings-list li {
+    width: 25%;
+  }
+}
+.meetings-list li span {
+  display: block;
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+.meetings-list li.is-next a,
+.meetings-list li.is-next span {
+  cursor: default;
+  color: #f05a24;
+}
+.meetings-list li.is-active:after {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: white;
+  margin-top: .5em;
+}
+@media (min-width: 480px) {
+  .meetings-list li.is-active:after {
+    max-width: 80%;
+  }
+}
+.meetings-list a {
+  color: #29aae1;
+}
+.meetings-list a:hover span {
+  color: #f05a24;
+}
+/* Detail content
+   ========================================================================== */
+.detail {
+  background-color: #f1f1f1;
+  color: #171643;
+}
+.detail ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1.5em;
+}
+.detail li {
+  margin-bottom: .5em;
+}
+.detail li:before {
+  content: "\25B6";
+  margin-right: .75em;
+  font-size: 9px;
+  font-size: 0.5625rem;
+  color: #656565;
+}
+.detail a {
+  color: #f05a24;
+}
+.detail a:hover {
+  color: #252525;
+}
+.detail-close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  text-decoration: none;
+}
+.detail-close span {
+  display: none;
+}
+.detail-close:before {
+  content: "\D7";
+  font-weight: 700;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 0;
+}
+.detail-close:hover {
+  color: #252525;
+}
+.detail-content {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.detail-content header {
+  margin-bottom: 3em;
+}
+.detail-content header h2 {
+  font-size: 70px;
+  font-size: 4.375rem;
+  margin: 0em;
+  color: #282775;
+}
+.detail-content header p {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-top: 0;
+}
+.detail-content-title {
+  display: block;
+  margin-bottom: .25em;
+  color: #282775;
+}

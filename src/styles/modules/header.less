@@ -4,9 +4,9 @@
 
 .header {
     font-weight: 700;
-    margin-bottom: 4em;
     p {
-        .font-size(21);
+        .font-size(28);
+        margin-bottom: 0;
     }
     span {
         color: @color-corp-alt;
@@ -22,5 +22,20 @@
         &:hover {
             opacity: .5;
         }
+    }
+}
+
+@media (min-width: @screen-m) {
+    .header{
+        display: flex;
+    }
+    .logo {
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: @screen-l) {
+    .header{
+       max-width: 700px; 
     }
 }

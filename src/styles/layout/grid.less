@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Common grid layout
+   ========================================================================== */
+
+.header,
+.meetings,
+.footer {
+    &:extend(.wrapper-content);
+}
+
+.detail-content {
+    &:extend(.wrapper-content);
+}
+
+.meetings,
+.footer {
+    @media (min-width: @screen-m) {
+        padding-left: 165px !important;
+    }
+}
+
+.page {
+    @media (min-width: @screen-m) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-areas:
+            "header  header  detail" 
+            "meetings meetings detail"
+            "footer footer detail";
+    }
+}
+
+.header {
+    grid-area: header;
+}
+
+.meetings {
+    grid-area: meetings;
+}
+
+.detail {
+    grid-area: detail;
+    @media (min-width: @screen-m) {
+        min-height: 100%;
+        .detail-content{
+            height: 100vh;
+            overflow-y: auto;
+        }
+    }
+}
+
+.footer {
+    grid-area: footer;
+}

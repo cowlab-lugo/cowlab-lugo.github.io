@@ -6,7 +6,7 @@ This is the public website for CowLab group.
 - Download or clone master branch
 - Run npm install
 
-## Commnads
+## Scripts
 
 ```
 npm run watch

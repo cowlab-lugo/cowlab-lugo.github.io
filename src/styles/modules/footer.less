@@ -12,7 +12,6 @@
         font-weight: 300;
         margin: 0;
     }
-
     ul {
         display: flex;
         list-style-type: none;
@@ -25,7 +24,6 @@
             }
         }
     }
-
     a {
         color: @color-corp-alt;
         text-decoration: none;
@@ -33,36 +31,32 @@
             color: white;
         }
     }
+}
 
-    .social {
-        //transform: rotate(-90deg);
-        //transform-origin: 0% 100%;
+.social-github {
+    a {
+        &:before {
+            display: inline-block;
+            position: relative;
+            top: 3px;
+            width: 25px;
+            height: 25px;
+            content: "";
+            background-image: url("@{path-img}/github.svg");
+            background-size: 100%;
+        }
     }
-    .social-github {
+    span {
+        display: none;
+    }
+    @media (min-width: @screen-l) {
+        span {
+            display: inline-block;
+        }
         a {
             &:before {
-                display: inline-block;
-                position: relative;
-                top: 3px;
-                width: 25px;
-                height: 25px;
-                content: "";
-                background-image: url("@{path-img}/github.svg");
-                background-size: 100%;
-            }
-        }
-        span {
-            display: none;
-        }
-        @media (min-width: @screen-l) {
-            span {
-                display: inline-block;
-            }
-            a {
-                &:before {
-                    top: 8px;
-                    margin-right: .5em;
-                }
+                top: 8px;
+                margin-right: .5em;
             }
         }
     }

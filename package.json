@@ -7,9 +7,11 @@
     "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
+    "jQuery": "^1.7.4",
+    "jquery": "^3.2.1",
     "laravel-mix": "^1.4.5",
-    "normalize.css": "7.0.0",
     "less": "^2.7.3",
-    "less-loader": "^4.0.5"
+    "less-loader": "^4.0.5",
+    "normalize.css": "7.0.0"
   }
 }

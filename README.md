@@ -1,8 +1,8 @@
-# Web Cowlab 1.0
+# Web Cowlab
 
-First edition of the CowLab Group, from Lugo, Spain.
+First edition of the Cowlab group from Lugo, Spain.
 
-Test the new site (jekyl based) on:
+Check the new site (jekyll based) on:
 
 [Cowlab in github.io](https://cowlab-lugo.github.io)
 

@@ -96,6 +96,7 @@
     }
     a {
         color: $color-corp-light;
+        display: block;
         &:hover {
             span {
                 color: $color-corp-alt;

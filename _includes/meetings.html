@@ -1,0 +1,19 @@
+<section class="meetings">
+    <header>
+        <h2>Meetings</h2>
+    </header>
+
+    <ul class="meetings-list">
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}">
+                <span>{{ post.title | escape }}</span>
+                {% assign date_format = site.minima.date_format | default: "%-d/%m/%Y" %}
+                {{ post.date | date: date_format }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a class="subscribe" href="{{ "/feed.xml" | relative_url }}">RSS</a>
+</section>

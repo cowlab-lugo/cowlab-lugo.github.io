@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="detail">
+    <a class="detail-close" href="{{ "/" | relative_url }}"><span>Cerrar</span></a>
+    <article class="detail-content" itemscope itemtype="http://schema.org/BlogPosting">
+        <header>
+            <h2 itemprop="name headline">{{ page.title | escape }}</h2>
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign date_format = site.minima.date_format | default: "%-d/%m/%Y"%}
+                {{ page.date | date: date_format }}
+              </time>
+              {% if page.author %}
+                • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+              {% endif %}
+        </header>
+
+        {% if site.disqus.shortname %}
+            {% include disqus_comments.html %}
+        {% endif %}
+    </article>
+</div>

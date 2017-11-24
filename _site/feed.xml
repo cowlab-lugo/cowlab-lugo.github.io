@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-24T15:21:59+01:00</updated><id>http://localhost:4000/</id><title type="html">Cowlab</title><subtitle></subtitle><entry><title type="html">#2</title><link href="http://localhost:4000/jekyll/update/2017/11/17/meeting-2.html" rel="alternate" type="text/html" title="#2" /><published>2017-11-17T21:33:57+01:00</published><updated>2017-11-17T21:33:57+01:00</updated><id>http://localhost:4000/jekyll/update/2017/11/17/meeting-2</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/11/17/meeting-2.html">&lt;h1 id=&quot;cowlab-2&quot;&gt;Cowlab #2&lt;/h1&gt;
+
+&lt;p&gt;Enlaces, apuntes y otras cosas interesantes que surgieron durante la segunda reunión.&lt;/p&gt;
+
+&lt;h2 id=&quot;juan-carlos&quot;&gt;Juan Carlos&lt;/h2&gt;
+
+&lt;p&gt;Charla sobre seguridad wifi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cowlab-lugo/meetings/blob/master/20171117/slides/Cowlab2-Seguridad%20Wifi.pdf&quot;&gt;Pdf de la charla&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;andrés&quot;&gt;Andrés&lt;/h2&gt;
+
+&lt;p&gt;Problema con semver/npm:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Automattic/wp-calypso/pull/12356#issuecomment-288358860&quot;&gt;https://github.com/Automattic/wp-calypso/pull/12356#issuecomment-288358860&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/react/blob/master/package.json#L57&quot;&gt;https://github.com/facebook/react/blob/master/package.json#L57&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;omar&quot;&gt;Omar&lt;/h2&gt;
+
+&lt;p&gt;Charlas Odoo, Apps as a service:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ILQJg39O1bY&quot;&gt;https://www.youtube.com/watch?v=ILQJg39O1bY&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=lP6WzJ54bXo&quot;&gt;https://www.youtube.com/watch?v=lP6WzJ54bXo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;óscar&quot;&gt;Óscar&lt;/h2&gt;
+
+&lt;p&gt;Galería estática creada con sigal con las fotos del evento:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://static.userlinux.net/cowlab/2/&quot;&gt;http://static.userlinux.net/cowlab/2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Cowlab #2 Enlaces, apuntes y otras cosas interesantes que surgieron durante la segunda reunión. Juan Carlos Charla sobre seguridad wifi: Pdf de la charla Andrés Problema con semver/npm: https://github.com/Automattic/wp-calypso/pull/12356#issuecomment-288358860 https://github.com/facebook/react/blob/master/package.json#L57 Omar Charlas Odoo, Apps as a service: https://www.youtube.com/watch?v=ILQJg39O1bY https://www.youtube.com/watch?v=lP6WzJ54bXo Óscar Galería estática creada con sigal con las fotos del evento: http://static.userlinux.net/cowlab/2/</summary></entry><entry><title type="html">#1</title><link href="http://localhost:4000/jekyll/update/2017/09/22/meeting-1.html" rel="alternate" type="text/html" title="#1" /><published>2017-09-22T22:33:57+02:00</published><updated>2017-09-22T22:33:57+02:00</updated><id>http://localhost:4000/jekyll/update/2017/09/22/meeting-1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/09/22/meeting-1.html">&lt;p&gt;Primera reunión.&lt;/p&gt;</content><author><name></name></author><summary type="html">Primera reunión.</summary></entry></feed>

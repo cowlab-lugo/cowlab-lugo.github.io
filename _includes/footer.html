@@ -1,0 +1,19 @@
+<footer class="footer">
+    <ul class="footer-info">
+        <li>
+            <h4>2017 - {{ site.title | escape }}</h4>
+        </li>
+        {% if site.email %}
+        <li>
+            <h4>Más información:
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </h4>
+        </li>
+        {% endif %}
+    </ul>
+    <ul class="social">
+        {% if site.github_username %}
+        <Li class="social-github"><a href="https://github.com/cowlab-lugo"><span>Github</span></a></Li>
+        {% endif %}
+    </ul>
+</footer>

@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "#2"
+date:   2017-11-17 21:33:57 +0100
+categories: jekyll update
+---
+{% remote_markdown https://raw.githubusercontent.com/cowlab-lugo/meetings/master/20171117/README.md %}

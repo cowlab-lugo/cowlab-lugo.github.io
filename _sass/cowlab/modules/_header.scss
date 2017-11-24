@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Header module
+   ========================================================================== */
+
+.header {
+    font-weight: 700;
+    p {
+        //.font-size(28);
+        @include font-size(28);
+        margin-bottom: 0;
+    }
+    span {
+        color: $color-corp-alt;
+    }
+}
+
+.logo {
+    a{
+        @extend .imageback;
+        background-image: url("/assets/img/logo.svg");
+        width: 100px;
+        height: 95px;
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
+
+@media (min-width: $screen-m) {
+    .header{
+        display: flex;
+    }
+    .logo {
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: $screen-l) {
+    .header{
+       max-width: 700px;
+    }
+}

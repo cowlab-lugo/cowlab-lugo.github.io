@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "es" }}">
+
+{% include head.html %}
+
+    <body>
+        <div class="page has-post">
+            <svg version="1.1" id="back-shape"  x="0px" y="0px"
+            width="600px" height="800px" viewBox="0 0 600 800"  preserveAspectRatio="none" enable-background="new 0 0 600 800" xml:space="preserve">
+                <polygon id="test" points="0,0 200,0 400,300 300,800 0,800"/>
+            </svg>
+            <svg version="1.1" id="back-shape-2"  x="0px" y="0px"
+            width="600px" height="800px" viewBox="0 0 600 800"  preserveAspectRatio="none" enable-background="new 0 0 600 800" xml:space="preserve">
+                <polygon id="test" points="0,0 400,0 400,300 500,800 0,800"/>
+            </svg>
+            {% include header.html %}
+
+            {% include meetings.html %}
+
+            {% include post.html %}
+
+            {% include footer.html %}
+        </div>
+        <script
+              src="https://code.jquery.com/jquery-3.2.1.min.js"
+              integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+              crossorigin="anonymous"></script>
+        <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+    </body>
+</html>

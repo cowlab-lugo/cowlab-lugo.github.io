@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Font size mixin
+   ========================================================================== */
+
+/**
+ * Font size number. Values rem and px fallback.
+ *
+ * .font-size(@sizeValue);
+ *
+ * Example HTML - LESS :
+ *
+ * .my-class{
+ *    .font-size(16)
+ * }
+ *
+ * Markup:
+ * <div class="my-class">This text has 16px and 1em size</div>
+ */
+
+/*
+ * You write:
+ *
+ * span {
+ *     .font-size(16);
+ * }
+ *
+ * Converts to:
+ *
+ * span {
+ *     font-size: 16px;
+ *     font-size: 1rem;
+ * }
+ */
+
+/*
+.font-size(@sizeValue) {
+    @remValue: @sizeValue / 16;
+    @pxValue: (@sizeValue);
+    font-size: ~"@{pxValue}px";
+    font-size: ~"@{remValue}rem";
+}
+*/
+
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 1) + px;
+    font-size: ($sizeValue / 16) + rem;
+}
+/*
+    @include font-size(13);
+*/

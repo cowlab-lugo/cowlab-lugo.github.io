@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Common styles
+   ========================================================================== */
+
+body {
+    background-color: $color-corp;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .015em;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.header,
+.meetings,
+.detail,
+.footer {
+    position: relative;
+}
+
+
+/* errors */
+.error {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-top: 1em;
+	h1 {
+		margin: 0;
+	}
+	p {
+		margin: 0.25em 0;
+	}
+}

@@ -8,6 +8,8 @@ categories: meetings
 
 Enlaces, apuntes y otras cosas interesantes que surgieron durante la segunda reunión.
 
+![cowlab 2-meeting](https://raw.githubusercontent.com/cowlab-lugo/meetings/master/20171117/photos/IMG_20171117_203527.jpg)
+
 ## Juan Carlos
 
 Charla sobre seguridad wifi:
@@ -33,3 +35,5 @@ Charlas Odoo, Apps as a service:
 Galería estática creada con sigal con las fotos del evento:
 
 - [http://static.userlinux.net/cowlab/2/](http://static.userlinux.net/cowlab/2/)
+
+

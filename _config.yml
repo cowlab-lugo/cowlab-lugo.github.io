@@ -17,7 +17,7 @@ title: Cowlab
 email: cowlab@enlugo.com
 description: >- # this means to ignore newlines until "baseurl:" CowLab es una plataforma abierta relacionada con nuevas tecnologías en Lugo.
 baseurl: "/web" # the subpath of your site, e.g. /blog
-url: "https://cowlab-lugo.github.io/web/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cowlab-lugo.github.io/web" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:  cowlab-lugo
 

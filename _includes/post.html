@@ -1,6 +1,6 @@
-<div class="detail">
-    <a class="detail-close" href="{{ "/" | relative_url }}"><span>Cerrar</span></a>
-    <article class="detail-content" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="post">
+    <a class="post-close" href="{{ "/" | relative_url }}"><span>Cerrar</span></a>
+    <article class="post-main" itemscope itemtype="http://schema.org/BlogPosting">
         <header>
             <h2 itemprop="name headline">{{ page.tag | escape }}</h2>
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -9,7 +9,7 @@
               </time>
         </header>
 
-        <div class="detail-content-format" itemprop="articleBody">
+        <div class="post-content" itemprop="articleBody">
             {{ content }}
         </div>
 

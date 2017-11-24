@@ -5,9 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    //.font-size(13);
     @include font-size(13);
-    padding-top: 3em;
+    padding-top: 2em;
     padding-bottom: 3em;
     h4 {
         font-weight: 300;
@@ -39,7 +38,7 @@
         &:before {
             display: inline-block;
             position: relative;
-            top: 3px;
+            top: 0px;
             width: 25px;
             height: 25px;
             content: "";
@@ -56,7 +55,7 @@
         }
         a {
             &:before {
-                top: 8px;
+                top: 7px;
                 margin-right: .5em;
             }
         }

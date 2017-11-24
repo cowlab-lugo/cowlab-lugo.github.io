@@ -7,9 +7,9 @@
  * To reducing css size you can use extends instead of mixins
  * to move the selector up to the properties you wish to use.
  *
- * Example LESS:
+ * Example Sass:
  * .myclass {
- *      &:extend(.wrapper);
+ *      @extend .wrapper;
  * }
  */
 

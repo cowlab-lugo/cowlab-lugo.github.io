@@ -17,21 +17,25 @@ body {
 
 .header,
 .meetings,
-.detail,
+.post,
 .footer {
     position: relative;
 }
 
-
-/* errors */
-.error {
-	padding-top: 2em;
-	padding-bottom: 2em;
-	margin-top: 1em;
-	h1 {
-		margin: 0;
-	}
-	p {
-		margin: 0.25em 0;
-	}
+/* Back svg
+   ========================================================================== */
+#back-shape {
+    fill: $color-corp-dark;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
 }
+#back-shape-2 {
+    fill: rgba($color-corp-light, .1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+}
+

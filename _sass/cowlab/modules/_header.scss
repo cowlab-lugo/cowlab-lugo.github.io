@@ -5,23 +5,39 @@
 .header {
     font-weight: 700;
     p {
-        //.font-size(28);
-        @include font-size(28);
+        @include font-size(20);
         margin-bottom: 0;
+        @media (min-width: $screen-l) {
+            @include font-size(28);
+        }
     }
     span {
         color: $color-corp-alt;
     }
+    @media (min-width: $screen-s) {
+           max-width: 500px;
+    }
+    @media (min-width: $screen-m) {
+           max-width: 600px;
+    }
+    @media (min-width: $screen-l) {
+           max-width: 700px;
+    }
+
 }
 
 .logo {
     a{
         @extend .imageback;
         background-image: url("/assets/img/logo.svg");
-        width: 100px;
-        height: 95px;
+        width: 60px;
+        height: 56px;
         &:hover {
             opacity: .5;
+        }
+        @media (min-width: $screen-m) {
+            width: 100px;
+            height: 95px;
         }
     }
 }
@@ -32,11 +48,5 @@
     }
     .logo {
         margin-right: 1em;
-    }
-}
-
-@media (min-width: $screen-l) {
-    .header{
-       max-width: 700px;
     }
 }

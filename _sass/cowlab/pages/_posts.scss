@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+
+/* Post content
+   ========================================================================== */
+
+.post {
+    background-color: $color-main-light;
+    color: $color-corp-dark;
+    &:before {
+        animation: controlwidth .5s 1 forwards;
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-corp;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 1.5em;
+    }
+    li {
+        margin-bottom: .5em;
+        &:before {
+            content: "▶";
+            margin-right: .75em;
+            @include font-size(9);
+            color: $color-main-dark;
+        }
+    }
+    a {
+        color: $color-corp-alt;
+        &:hover {
+            color: $color-main;
+        }
+    }
+}
+
+.post-close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    text-decoration: none;
+    span {
+        display: none;
+    }
+    &:before {
+        content: "×";
+        font-weight: 700;
+        @include font-size(32);
+        line-height: 0;
+    }
+    &:hover {
+        color: $color-main;
+    }
+}
+
+.post-main {
+    padding-top: 1.5em;
+    animation: controlopacity .75s ease-in;
+    header {
+        margin-bottom: 1em;
+        border-bottom: 1px solid $color-main-medium;
+        padding-bottom: .5em;
+        h2 {
+            @include font-size(64);
+            margin: 0;
+            color: $color-corp-dark;
+        }
+        time {
+            @include font-size(14);
+            color: $color-main-medium;
+        }
+    }
+}
+
+@-webkit-keyframes controlwidth {
+    0% {
+    width: 100%;
+    }
+    100% {
+    width: 0%;
+    }
+}
+
+@-webkit-keyframes controlopacity {
+    0% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.post-content {
+    padding-bottom: 3em;
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-corp;
+        margin-bottom: .15em;
+        +p,
+        +ul {
+            margin-top: 0;
+            line-height: 1.45em;
+        }
+    }
+    h1 {
+        @include font-size(26);
+    }
+    h2 {
+        color: $color-corp-dark;
+        @include font-size(21);
+    }
+
+    h3, h4, h5, h6 {
+        color: $color-corp-dark;
+        @include font-size(18);
+    }
+    p {
+        color: $color-main-dark;
+    }
+    ul {
+        @include font-size(14);
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+

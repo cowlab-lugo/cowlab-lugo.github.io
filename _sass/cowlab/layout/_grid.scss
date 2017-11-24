@@ -2,9 +2,39 @@
    Common grid layout
    ========================================================================== */
 
+.page {
+    min-height: 100vh;
+    .post {
+       display: none;
+    }
+    @media (min-width: $screen-m) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0px;
+        grid-template-rows: auto;
+
+        grid-template-areas:
+            "header  header  post"
+            "meetings meetings post"
+            "footer footer post";
+
+        .post {
+           display: block;
+        }
+    }
+
+    &.has-post {
+        .post {
+            display: block;
+        }
+        @media (min-width: $screen-m) {
+            grid-template-columns: 1fr 1fr 1.5fr;
+        }
+    }
+}
+
 .header,
 .meetings,
-.detail-content,
+.post-main,
 .footer {
     @extend .wrapper-content;
 }
@@ -16,34 +46,6 @@
     }
 }
 
-.page {
-    .detail {
-       display: none;
-    }
-    @media (min-width: $screen-m) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 0px;
-
-        grid-template-areas:
-            "header  header  detail"
-            "meetings meetings detail"
-            "footer footer detail";
-
-        .detail {
-           display: block;
-        }
-    }
-
-    &.has-post {
-        .detail {
-            display: block;
-        }
-        @media (min-width: $screen-m) {
-            grid-template-columns: 1fr 1fr 1.5fr;
-        }
-    }
-}
-
 .header {
     grid-area: header;
 }
@@ -52,54 +54,15 @@
     grid-area: meetings;
 }
 
-.detail {
-    grid-area: detail;
-    overflow: hidden;
-    position: relative;
-    &:before {
-        animation: meetinganimation .5s 1 forwards;
-        content: "";
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $color-corp;
-    }
+.post {
+    grid-area: post;
     @media (min-width: $screen-m) {
         min-height: 100%;
-        .detail-content{
+        .post-main{
             height: 100vh;
             overflow-y: auto;
         }
     }
-}
-
-.detail-content {
-        animation: meetincontent .75s ease-in;
-
-}
-
-
-
-@-webkit-keyframes meetinganimation {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-@-webkit-keyframes meetincontent {
-  0% {
-    opacity: 0;
-  }
-  65% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .footer {

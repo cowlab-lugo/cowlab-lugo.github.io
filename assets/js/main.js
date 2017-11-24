@@ -16,10 +16,11 @@ function centerCalc(mouseX, mouseY){
     let innerWidth = $(window).innerWidth();
     let innerHeight = $(window).innerHeight();
 
-    //let xCenter = (400 - (mouseX*400 / innerWidth)) / 1.5;
-    //let yCenter = (800 - (mouseY*800 / innerHeight)) / 1.5;
+    //let x2Center = (300 - (mouseX*400 / innerWidth));
+    //let y2Center = (800 - (mouseY*800 / innerHeight)) / 1.5;
     let xCenter = (mouseX*600 / innerWidth);
     let yCenter = (mouseY*800 / innerHeight);
 
+    //return {x:xCenter, y:yCenter, x2:x2Center}
     return {x:xCenter, y:yCenter}
 }

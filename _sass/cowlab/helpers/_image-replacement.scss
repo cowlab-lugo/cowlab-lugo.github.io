@@ -15,12 +15,12 @@
  *    background-image: url('my-image.jpg');
  * }
  *
- * Less example:
+ * Sass example:
  * -----------------------------------------------------------------------------
  * <h1 class="example"><a href="#">My example</a></h1>
  *
  * .example {
- *    .imageback();
+ *    @extend .imageback;
  *    background-image: url(example.jpg);
  *    width: 150px;
  *    height: 100px;

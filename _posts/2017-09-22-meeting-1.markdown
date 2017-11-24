@@ -2,6 +2,6 @@
 layout: post
 title:  "#1"
 date:   2017-09-22 21:33:57 +0100
-categories: jekyll update
+categories: meetings
 ---
 Primera reunión.

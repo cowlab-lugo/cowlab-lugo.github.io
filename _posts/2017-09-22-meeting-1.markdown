@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "#1"
+title:  "Reunión cowlab - 1"
+tag:    "#1"
 date:   2017-09-22 21:33:57 +0100
 categories: meetings
 ---

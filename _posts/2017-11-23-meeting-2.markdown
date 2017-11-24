@@ -5,7 +5,7 @@ tag:    "#2"
 date:   2017-11-17 21:33:57 +0100
 categories: meetings
 ---
-# Cowlab #2
+# Reunión cowlab - 2
 
 Enlaces, apuntes y otras cosas interesantes que surgieron durante la segunda reunión.
 

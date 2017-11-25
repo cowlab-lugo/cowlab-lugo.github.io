@@ -79,27 +79,6 @@
     }
 }
 
-@-webkit-keyframes controlwidth {
-    0% {
-    width: 100%;
-    }
-    100% {
-    width: 0%;
-    }
-}
-
-@-webkit-keyframes controlopacity {
-    0% {
-        opacity: 0;
-    }
-    65% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .post-content {
     padding-bottom: 3em;
     h1, h2, h3, h4, h5, h6 {
@@ -135,3 +114,23 @@
     }
 }
 
+@keyframes controlwidth {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes controlopacity {
+    0% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

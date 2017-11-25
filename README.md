@@ -1,11 +1,5 @@
-# Web Cowlab
+# Cowlab public web
 
-First edition of the Cowlab group from Lugo, Spain.
+This is the public website for Cowlab group.
 
-Check the new site (jekyll based) on:
-
-[Cowlab in github.io](https://cowlab-lugo.github.io)
-
-[Repo](https://github.com/cowlab-lugo/cowlab-lugo.github.io)
-
-Cheers!
+Check the new (jekyll based) site on [https://cowlab-lugo.github.io](https://cowlab-lugo.github.io).

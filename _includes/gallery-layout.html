@@ -1,0 +1,10 @@
+
+<ul>
+    {% for picture in include.gallery.pictures %}
+    <li>
+        <a href="{{ picture.original }}">
+            <img src="{{ picture.thumbnail }}" alt="{{ picture.title }}" />
+        </a>
+    </li>
+    {% endfor %}
+</ul>

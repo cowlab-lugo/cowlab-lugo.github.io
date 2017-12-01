@@ -37,4 +37,6 @@ Galería estática creada con sigal con las fotos del evento:
 
 - [http://static.userlinux.net/cowlab/2/](http://static.userlinux.net/cowlab/2/)
 
+## Fotos
 
+{% include gallery-layout.html gallery=site.data.galleries.2 %}

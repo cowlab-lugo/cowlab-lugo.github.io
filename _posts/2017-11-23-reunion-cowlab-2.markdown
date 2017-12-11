@@ -39,4 +39,4 @@ Galería estática creada con sigal con las fotos del evento:
 
 ## Fotos
 
-{% include gallery-layout.html gallery=site.data.galleries.2 %}
+{% include gallery.html gallery=site.data.galleries.2 %}

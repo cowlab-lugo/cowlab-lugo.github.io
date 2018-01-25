@@ -1,7 +1,7 @@
 <footer class="footer">
     <ul class="footer-info">
         <li>
-            <h4>2017 - {{ site.title | escape }}</h4>
+            <h4>{{ 'now' | date: "%Y" }} - {{ site.title | escape }}</h4>
         </li>
         {% if site.email %}
         <li>

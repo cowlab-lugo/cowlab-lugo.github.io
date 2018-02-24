@@ -23,7 +23,7 @@ github_username:  cowlab-lugo
 
 # Build settings
 markdown: kramdown
-theme: false
+theme: minima
 plugins:
   - jekyll-feed
 

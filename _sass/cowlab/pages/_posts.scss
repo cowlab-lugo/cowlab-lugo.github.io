@@ -104,6 +104,7 @@
     }
     p {
         color: $color-main-dark;
+        line-height: 1.45em;
     }
     ul {
         @include font-size(14);

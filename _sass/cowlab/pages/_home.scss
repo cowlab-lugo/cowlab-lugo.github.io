@@ -50,11 +50,26 @@
     line-height: 1.4em;
     font-weight: 700;
     margin-top: .35em;
-    color: $color-corp-alt;
     span {
-        display: block;
+        display: inline-block;
         color: white;
         font-weight: 300;
+        &:first-child {
+            display: block;
+            color: $color-corp-alt;
+        }
+    }
+    a {
+        display: inline-block;
+        background-color: white;
+        border-radius: 4px;
+        padding: .25em .5em;
+        color: $color-main;
+        margin-left: .5em;
+        &:hover {
+            background-color: $color-corp-alt;
+            color: white;
+        }
     }
 }
 
@@ -75,7 +90,7 @@
         }
         span {
             display: block;
-            @include font-size(40);
+            @include font-size(30);
             font-weight: 700;
             color: white;
             margin: 0;

@@ -17,7 +17,7 @@ La charla constará de un guión en el que iremos comparando las característica
 * composer, por [Diego](https://www.dieg0v.com/).
 * pip, por [Óscar](https://www.userlinux.net).
 
-La reunión dará lugar en el local que muy amablemente nos cede la gente de  [makers.lugo](http://makerslugo.org/) situado en el *CEI Nodus* (*Avenida da Coruña, 500*). El horario todavía está por determinar (se actualizará esta entrada cuando se fije hora).
+La reunión dará lugar en el local que muy amablemente nos cede la gente de  [makers.lugo](http://makerslugo.org/) situado en el *CEI Nodus* (*Avenida da Coruña, 500*) y el horario se ha fijado a las **20:30 horas**.
 
 ## Novedades
 

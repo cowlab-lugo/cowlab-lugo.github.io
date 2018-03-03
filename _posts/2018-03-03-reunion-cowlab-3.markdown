@@ -7,6 +7,8 @@ categories: meetings
 ---
 # Reunión cowlab - 3
 
+<img src="https://raw.githubusercontent.com/cowlab-lugo/meetings/master/20180302/photos/cowlab3.jpg" style="width: 100%" alt="Cowlab 3, gestores de paquetes" />
+
 La tercera reunión del cowlab tuvo una única temática: gestores de paquetes. Una charla triple - que pudieron haber sido perfectamente tres charlas individuales - sobre los gestores de paquetes más usados en Python, Javascript y PHP.
 
 Agradecer tanto a los ponentes como a los asistentes al evento y, por supuesto, a [@makers.lugo](http://makerslugo.org/) por habernos cedido el local por unas horas.

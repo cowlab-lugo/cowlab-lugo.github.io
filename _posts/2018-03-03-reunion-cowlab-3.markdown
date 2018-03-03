@@ -23,7 +23,7 @@ A continuación están los enlaces a las correspondientes charlas, proyectos y d
 * [check-iscowalive](https://github.com/cowlab-lugo/check-iscowalive)
 * [checkcowalive](https://github.com/cowlab-lugo/checkcowalive)
 
-Y, por supuesto, no pueden faltar las fotos:
+Y, obviamente, no pueden faltar las fotos:
 
 {% include gallery.html gallery=site.data.galleries.3 %}
 

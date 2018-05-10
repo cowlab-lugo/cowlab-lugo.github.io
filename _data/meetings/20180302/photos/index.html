@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>photos</title>
+    <meta name="description" content="">
+    <meta name="author" content="None">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="static/classic/galleria.classic.css">
+    <link rel="stylesheet" href="static/css/style.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Molengo">
+    <style>
+      body { font: 16px/1.5 Molengo, sans-serif; }
+      h1, h2, h3, h4, h5, h6 { font-family: "PT Sans", sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="./">photos</a></h1>
+
+
+      </header>
+
+      <div id="main" role="main">
+
+        <div class="icons">
+          <a id="fullscreen"><img src="static/img/fullscreen.png"
+            title="Fullscreen" alt="Fullscreen" /></a>
+        </div>
+        <div id="gallery">
+              <a href="01.jpg">
+                <img src="thumbnails/01.jpg" alt="01.jpg"
+                    data-title="01.jpg"
+                    data-description="              <br>
+ISO: 320, Focal: 5.0, Exposure: 339/31250, Fstop: 2.0                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="02.jpg">
+                <img src="thumbnails/02.jpg" alt="02.jpg"
+                    data-title="02.jpg"
+                    data-description="              <br>
+ISO: 448, Focal: 5.0, Exposure: 15891/1000000, Fstop: 2.0                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="03.jpg">
+                <img src="thumbnails/03.jpg" alt="03.jpg"
+                    data-title="03.jpg"
+                    data-description="              <br>
+ISO: 309, Focal: 5.0, Exposure: 5281/500000, Fstop: 2.0                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="04.jpg">
+                <img src="thumbnails/04.jpg" alt="04.jpg"
+                    data-title="04.jpg"
+                    data-description="              <br>
+ISO: 324, Focal: 5.0, Exposure: 11057/1000000, Fstop: 2.0                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="05.jpg">
+                <img src="thumbnails/05.jpg" alt="05.jpg"
+                    data-title="05.jpg"
+                    data-description="              <br>
+ISO: 50, Focal: 4.0, Exposure: 1/17, Fstop: 1.8                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="06.jpg">
+                <img src="thumbnails/06.jpg" alt="06.jpg"
+                    data-title="06.jpg"
+                    data-description="              <br>
+ISO: 160, Focal: 4.0, Exposure: 1/50, Fstop: 1.8                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="07.jpg">
+                <img src="thumbnails/07.jpg" alt="07.jpg"
+                    data-title="07.jpg"
+                    data-description="              <br>
+ISO: 50, Focal: 4.0, Exposure: 1/17, Fstop: 1.8                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="08.jpg">
+                <img src="thumbnails/08.jpg" alt="08.jpg"
+                    data-title="08.jpg"
+                    data-description="              <br>
+ISO: 363, Focal: 5.0, Exposure: 7/625, Fstop: 2.0                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="09.jpg">
+                <img src="thumbnails/09.jpg" alt="09.jpg"
+                    data-title="09.jpg"
+                    data-description="              <br>
+ISO: 345, Focal: 5.0, Exposure: 10353/1000000, Fstop: 2.0                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="10.jpg">
+                <img src="thumbnails/10.jpg" alt="10.jpg"
+                    data-title="10.jpg"
+                    data-description="              <br>
+ISO: 211, Focal: 5.0, Exposure: 7993/1000000, Fstop: 2.0                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="11.jpg">
+                <img src="thumbnails/11.jpg" alt="11.jpg"
+                    data-title="11.jpg"
+                    data-description="              <br>
+ISO: 432, Focal: 5.0, Exposure: 14521/1000000, Fstop: 2.0                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+              <a href="12.jpg">
+                <img src="thumbnails/12.jpg" alt="12.jpg"
+                    data-title="12.jpg"
+                    data-description="              <br>
+ISO: 409, Focal: 5.0, Exposure: 3597/250000, Fstop: 2.0                <br>Date: viernes, 02. marzo 2018
+"
+ />
+              </a>
+        </div>
+
+
+      </div>
+
+      <footer>
+        <p>          Generated by <a href="https://github.com/saimn/sigal">sigal</a></p>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="static/js/galleria-1.4.2.min.js"></script>
+    <script src="static/js/galleria.classic.min.js"></script>
+    <script src="static/js/galleria.history.min.js"></script>
+    <script>
+
+    Galleria.configure({
+        imageCrop: false,
+        transition: "fade"
+    });
+    Galleria.run("#gallery");
+
+
+    Galleria.ready(function() {
+        this.attachKeyboard({
+            right: this.next,
+            left: this.prev,
+            /* Toggle fullscreen display on press of 'f' key */
+            0x46: this.toggleFullscreen,
+        });
+
+        var gallery = this;
+        $('#fullscreen').click(function() {
+          gallery.toggleFullscreen();
+        });
+
+        $('.icons').appendTo(this.$('container'));
+
+     });
+
+    </script>
+  </body>
+</html>

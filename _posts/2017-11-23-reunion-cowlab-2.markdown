@@ -9,13 +9,13 @@ categories: meetings
 
 Enlaces, apuntes y otras cosas interesantes que surgieron durante la segunda reunión.
 
-![cowlab 2-meeting](https://raw.githubusercontent.com/cowlab-lugo/meetings/master/20171117/photos/2017-11-17%2021.06.51-1.jpg)
+![cowlab 2-meeting](https://raw.githubusercontent.com/cowlab-lugo/cowlab-lugo.github.io/master/_data/meetings/20171117/photos/2017-11-17%2021.06.51-1.jpg)
 
 ## Juan Carlos
 
 Charla sobre seguridad wifi:
 
-- [Pdf de la charla](https://github.com/cowlab-lugo/meetings/blob/master/20171117/slides/Cowlab2-Seguridad%20Wifi.pdf)
+- [Pdf de la charla](https://raw.githubusercontent.com/cowlab-lugo/cowlab-lugo.github.io/master/_data/meetings/20171117/slides/Cowlab2-Seguridad%20Wifi.pdf)
 
 ## Andrés
 

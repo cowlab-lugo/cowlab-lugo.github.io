@@ -19,7 +19,7 @@ cuestionado distintas formas y objetivos de la iniciativa:
   independientes?.
 
 Las preguntas todavía están encima de la mesa, aunque los miembros asistentes han puesto de
-manifiesto sus preferencias personales se abrirá un hilo oficial en la lista de correo para dar
+manifiesto sus preferencias personales se abrirá un hilo oficial en la [lista de correo](https://groups.google.com/forum/#!forum/cowlab-lugo) para dar
 lugar a las opiniones de todos.
 
 Gracias a todos los asistentes, ¡nos vemos en la próxima!.

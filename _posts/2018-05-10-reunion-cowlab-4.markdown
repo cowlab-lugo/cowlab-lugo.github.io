@@ -7,6 +7,8 @@ categories: meetings
 ---
 # Reunión cowlab - 4
 
+<img src="https://raw.githubusercontent.com/cowlab-lugo/cowlab-lugo.github.io/master/_data/meetings/20180510/photos/01.jpg" style="width: 100%" alt="Cowlab 3, gestores de paquetes" />
+
 Cuarta reunión cowlab, esta vez se trató de algo informal, catalogado más como *tech and beers* que
 como reunión en sí. Se plantearon diversos temas sobre el formato del propio cowlab y hemos
 cuestionado distintas formas y objetivos de la iniciativa:

@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>pip - python package manager</title>
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/black.min.css">
+    <link rel="stylesheet" href="css/zenburn.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-markdown
+            data-separator="^\n----\n$"
+            data-separator-vertical="^\n---\n$">
+            <script type="text/template">
+            <!-- .slide: data-background="#242177" -->
+            <img class="plain" src="images/cowlab.png" alt="cowlab - paquetes">
+
+            Cowlab Talks
+
+            ### Package Managers
+
+            [@oscarmlage](https://twitter.com/oscarmlage) - [@nosolosw](https://twitter.com/nosolosw) - [@dieg0v](https://twitter.com/dieg0v)
+
+            ----
+
+            ## PIP
+
+            Python Package Manager
+
+            [https://github.com/pypa/pip](https://github.com/pypa/pip)
+
+            ---
+
+            ## What is pip
+
+            * [pip](https://pip.pypa.io/en/stable/quickstart/) is a package management system used to install and manage software packages written in Python.
+
+            * From **Python 2.7.9** and **Python 3.4** `pip` is included by default (`pip3` for Python 3)
+
+            ---
+
+            ## Meaning of PIP
+
+            * `P`ip `I`nstalls `P`ackages
+
+            * `P`ip `I`nstalls `P`ython
+
+            * `P`referred `I`nstaller `P`rogram
+
+            ---
+
+            ## A bit of History (1/4)
+
+            * **1998<!-- .element: class="grey" -->**: started to discuss about [distutils](https://packaging.python.org/key_projects/#distutils), a package of the Python `stdlib` for creating and installing *distribution packages* (eggs, packages, modules...).
+
+            * **2000<!-- .element: class="grey" -->**: the `distutils` was added to the `stdlib`. And started to discuss about creating a centralized index of packages.
+
+            * **2003<!-- .element: class="grey" -->**: [PyPi](https://pypi.python.org) was released.
+
+            ---
+
+            ## A bit of History (2/4)
+
+            * **2004<!-- .element: class="grey" -->**: the [setuptools](https://packaging.python.org/key_projects/#setuptools) (3rd party) was released (`easy_install`). `setuptools` is a collection of enhancements to the Python distutils that allow you to more easily build and distribute Python distributions, especially ones that have dependencies on other packages.
+
+            * **2006<!-- .element: class="grey" -->**: [buildout](https://packaging.python.org/key_projects/#buildout) was released. Buildout is a Python-based build system for creating, assembling and deploying applications from multiple parts (python and non-python ones).
+
+            ---
+
+            ## A bit of History (3/4)
+
+            * **2007<!-- .element: class="grey" -->**: [virtualenv](https://packaging.python.org/key_projects/#virtualenv) released by Ian Bicking. Virtualenv is a tool for creating isolated Python environments.
+
+            * **2008<!-- .element: class="grey" -->**: [pip](https://packaging.python.org/key_projects/#pip) was introduced by Ian Bicking as an alternative to easy_install (the installer included with `setuptools`).
+
+            * **2008<!-- .element: class="grey" -->**: [distribute](https://pypi.python.org/pypi/distribute) was forked from `setuptools` by Tarek Ziade, in an effort to create a more open project.
+
+            ---
+
+            ## A bit of History (4/4)
+
+            * **2011<!-- .element: class="grey" -->**: [PyPA](https://packaging.python.org/glossary/#term-python-packaging-authority-pypa) (Python Packaging Authority) is created to take over the maintenance of `pip` and `virtualenv`. First official release of `pip`.
+
+            * **2012<!-- .element: class="grey" -->**: The effort to include [distutils2](https://wiki.python.org/moin/Distutils2) in `stdlib` was abandoned due lack of involvement.
+
+            * **2013-now<!-- .element: class="grey" -->**: `pip` becomes more and more popular and [all the cool kids are using pip these days](http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/) instead of `easy_install` or the others.
+
+            ---
+
+            ## There are many options
+
+            Distutils, setuptools, buildout, distribute, pip...
+
+            <img src="images/manyoptions.gif" alt="many options" />
+
+            ---
+
+            ## You can
+
+            Read all this stuff to try to understand something:
+
+            * [Patrick Dubroy: So you want to install a Python Package](https://dubroy.com/blog/so-you-want-to-install-a-python-package/)
+            * [James Bennett: On packaging](https://www.b-list.org/weblog/2008/dec/14/packaging/)
+            * [Quora, differences tween pip and easy_install](https://www.quora.com/Python-programming-language-1/What-are-the-differences-between-Pythons-easy_install-and-pip-for-package-managment-and-installation)
+            * [James Bennett: Why I like pip](https://www.b-list.org/weblog/2008/dec/15/pip/)
+            * [Pip docs: Pip compared to easy_install](https://pip.readthedocs.io/en/1.1/other-tools.html#pip-compared-to-easy-install)
+            * [Martijn Faassen: A history of Python packaging](https://blog.startifact.com/posts/older/a-history-of-python-packaging.html)
+
+            (recommended for people with free time and without children)
+
+            ---
+
+            ## Or just use pip.
+
+            <img src="images/thumbsup.gif" alt="thumbsup" />
+
+            ---
+
+            # Why?
+
+            Ok, after all we're skeptical by nature.
+
+            Let's see options...
+
+            ---
+
+            ## Distutils
+
+            The most basic way to install a package is to download the source code and run:
+            <!-- .element: style="text-align: left;"> -->
+
+            ```console
+            $ python setup.py install
+            ```
+
+            <p style="text-align: left">It requires only the `distutils` module, `stdlib`. It works **BUT<!-- .element: class="red" -->**:</p>
+
+            * You have to manually download all the dependencies.
+            * There’s no easy way to uninstall packages.
+            * There’s no way to install several versions of the same package.
+
+            ---
+
+            ## Setuptools
+
+            <p style="text-align: left">Setuptools and `easy_install` were created to solve these problems.</p>
+
+            <p style="text-align: left">It's a 3rd party library that allows Python to understand `.egg` files and `easy_install` is able to download+install package + **all its dependencies**. **BUT<!-- .element: class="red" -->**:</p>
+
+            * If some of the dependencies fails, the installation is not usable.
+            * Error codes are incomprehensible.
+            * Version Control Systems are not supported.
+            * Really difficult to uninstall (there is no an `easy_uninstall` tool).
+
+            ---
+
+            ## PIP
+
+            And pip is great **BECAUSE<!-- .element: class="green" -->**:
+
+            * Downloads deps **before** installation: install fidelity.
+            * Install from VCS such as `git`, `mercurial`, `subversion`, and `bazaar`.
+            * Support uninstallation of packages.
+            * Works perfect with `virtualenv`.
+
+            ---
+
+            * `distutils` is already in the `stdlib`, so you can still use it for any other purposes.
+            * `setuptools` is required, so you can take advantage of this.
+
+            In the end, if you install `pip`, you are able to rule them all.
+
+            <img src="images/ring.gif" alt="rule them all" />
+            <!-- .element: class="fragment" data-fragment-index="1" -->
+
+            ---
+
+            ## Not convinced yet?
+            <img src="images/comeon.gif" alt="oh come on!" />
+
+            ----
+
+            # Task <span class="green">#1</span>
+
+            Install a real project using pip<!-- .element: class="green" -->
+
+            ---
+
+            ## <span class="red">1.</span> How to install pip
+
+            <p style="text-align: left">As we said before:</p>
+
+            * From Python 2.7.9 and Python 3.4 pip is included by default (pip3 for Python 3)
+
+            <p style="text-align: left">In any other case you can...</p>
+
+            ---
+
+            #### Get-pip.py
+
+            ```console
+            $ wget https://bootstrap.pypa.io/get-pip.py
+            $ python get-pip.py
+            ```
+
+            #### Debian
+
+            ```console
+            $ apt install python-pip
+            $ apt install python3-pip
+            ```
+
+            #### OSX
+
+            It's included in the python package
+
+            ```console
+            $ brew install python
+            $ brew install python3
+            ```
+
+            ---
+
+            # Syntax
+
+            ```console
+            $ pip install whatever
+            $ pip install -r requirements.txt
+            $ pip install -e git+https://github.com/foobar/foobar.git
+            $ pip help install
+            ```
+
+            ```console
+            $ pip uninstall whatever
+            $ pip help uninstall
+            ```
+
+            ```console
+            $ pip install -U pip
+            $ pip list
+            $ pip freeze
+            $ pip help
+            ```
+
+            ---
+
+            ## <span class="red">2.</span> Virtualenv
+
+            <p style="text-align: left">We need to create and activate the environment with `virtualenv`:</p>
+
+            ```console
+            $ virtualenv lektor
+            $ . lektor/bin/activate
+            (lektor)$
+            ```
+
+            ---
+
+            ## <span class="red">3.</span> Install the real project
+
+            ```console
+            (env)$ pip install Lektor
+            ```
+            <img class="plain" src="images/task1-1.png" />
+
+            ---
+
+            ### Where are all those files <span class="red">FROM</span>?
+
+            * It reads the requirements from `requirements.txt` or `setup.py`
+            * <img class="plain" src="images/task1-2.png" />
+
+            ---
+
+            ### Where are all those files <span class="red">GOING</span>?
+
+            * The packages are installed in the environment directory `env/lib/pythonX.X/site-packages`
+            * <img class="plain" src="images/task1-3.png" />
+
+            ---
+
+            ## <span class="red">4.</span> Run the project
+
+            ```console
+            (env)$ lektor quickstart
+            (env)$ cd blog
+            (env)$ lektor server
+            ```
+
+            <img class="plain" src="images/task1-4.png" />
+
+            ---
+
+            ## <span class="red">5.</span> Other stuff
+
+            <p style="text-align: left">pip is just a package manager, afaik it does not support *by itself* any other kind of stuff like:</p>
+
+            * User commands, depends on other tools:
+              ```
+              $ python manage.py custom_cmd    # django manage.py
+              $ python setup.py test           # distutils setup.py
+              ```
+            * Different environments (testing, devel or production)
+              * `pip` just install what you say, organize yourself:
+
+              ```console
+              requirements.txt
+              requirements/
+                base.txt
+                dev.txt
+              ```
+
+              * `virtualenv` is the tool that provides us different envs.
+
+            ----
+
+            # Task <span class="green">#2</span>
+
+            Create a package from scratch<!-- .element: class="green" -->
+
+            ---
+
+            ## <span class="red">1.</span> Package skel
+
+            ```console
+            $ mkdir task-2/
+            $ cd task-2/
+            $ mkdir iscowalive/ docs/ tests/
+            $ touch AUTHORS CHANGELOG LICENSE MANIFEST.in README.md \
+            VERSION setup.py
+            ```
+            This is how a package *should* look like:
+
+            ```console
+            task-2/         <- package dir
+             iscowalive/    <- app dir
+             docs/          <- documentation
+             tests/         <- tests
+             AUTHORS        <- authors description
+             CHANGELOG      <- history of changes across versions
+             LICENSE        <- license description
+             MANIFEST.in    <- list of files that should be in the package
+             README.md      <- typical readme file (md, rst... whatever)
+             VERSION        <- version file
+             setup.py       <- meta information about the package
+             ```
+
+            ---
+
+            ## <span class="red">2.</span> Run the package
+
+            Build and activate an environment
+            ```console
+            $ mkdir envs/ ; cd envs   # .gitignore them
+            $ virtualenv ica          # create virtualenv
+            $ ./ica/bin/activate      # activate it
+            ```
+
+            Install the requirements
+            ```console
+            (iscowalive)$ pip install -r requirements.txt
+            or
+            (iscowalive)$ python setup.py install
+            ```
+
+            Run the package
+            ```console
+            (iscowalive)$ python setup.py develop    # mark as developing
+            (iscowalive)$ ./bin/ica https://www.userlinux.net
+            OK
+            (iscowalive)$ ./bin/ica http://google.com/404
+            KO
+            ```
+
+            ---
+
+            ## <span class="red">3.</span> Publish the package: twine
+
+            * An account in [https://pypi.org/](https://pypi.org/) is needed
+
+            ```console
+            $ pip install twine       # tool that uploads to pypi
+            $ cat ~/.pypirc           # credentials of the pypi account
+            [pypi]
+            username = r0sk
+            password = xxxx
+            $ python setup.py sdist   # using distutils here
+            $ twine upload dist/*     # uploading to pypi
+            ```
+
+            * [https://pypi.org/project/iscowalive/](https://pypi.org/project/iscowalive/)
+
+            ---
+
+            ## <span class="red">4.</span> Manage package versions
+
+            * Steps to do before release new version:
+
+              * Increment the version number in your `VERSION` file.
+              * If necessary, update the `AUTHORS`.
+              * Update `CHANGELOG` (adapt the output of `git log --oneline --decorate`)
+              * Commit, Tag and push tags:
+
+              ```console
+              $ git commit -am "New version $(python setup.py --version)"
+              $ git tag -a $(python setup.py --version) \
+                -m 'version $(python setup.py --version)'
+              $ git push --tags
+              $ python setup.py sdist
+              $ twine upload dist/*
+              ```
+
+            ---
+
+            ## <span class="red">5.</span> Package best practices
+
+            <p style="text-align: left">I think we need some extra stuff to offer a quality package:</p>
+
+            * Deal with environments (thinking on tests, the upcoming contributors, etc...)
+            * Tests
+            * Documents
+
+            ---
+
+            ### <span class="red">5.1</span> Deal with environments
+
+            * We will need, at least, 2 different environments: `prod` (ica) and `dev` (icadev).
+            * The right tool to manage environments is `virtualenv` (mention `python venv` too)
+            * `pip` + `virtualenv` + proper organization of `requirements` is the cocktail.
+
+              * ica
+              ```
+              $ virtualenv ica
+              $ . ica/bin/activate
+              (icadev)$ pip install -r requirements.txt
+              ```
+              * icadev (ica + packages needed for docs and tests)
+              ```
+              $ virtualenv icadev
+              $ . icadev/bin/activate
+              (icadev)$ pip install -r requirements/dev.txt
+              ```
+
+            ---
+
+            ### <span class="red">5.2</span> Tests
+
+            <p style="text-align: left">Test are basic for the quality of the package/project. In python there are plenty of options: [nose](http://nose.readthedocs.io/en/latest/), [pyunit](https://wiki.python.org/moin/PyUnit), [pytest](https://docs.pytest.org/en/latest/)...</p>
+
+            * My choice: `pytest` because is the one I know better.
+            * We need to install `pytest`  (`icadev`).
+            * We need to configure it: see `setup.cfg`.
+              ```console
+              $ python setup.py test
+              $ py.test -s
+              $ py.test -s --cov iscowalive
+              ```
+
+            ---
+
+            ### <span class="red">5.3</span> Documents
+
+            <p style="text-align: left">We also need documentation for the package/project. [ReadTheDocs](https://readthedocs.org/) and [Sphinx](http://www.sphinx-doc.org/en/master/) are the keys here.</p>
+
+            * We need to install `sphinx` (`icadev`).
+            * We need a `readthedocs` account.
+            * We need to configure the `docs/`: `Makefile` and `conf.py`
+                ```console
+                $ cd docs/
+                $ make html
+                ```
+            * For publishing
+              * Login RTD, Import project, repo path
+              * Configure the github webhook and...
+              * http://iscowalive.readthedocs.io/en/latest/
+
+
+            ---
+
+            ## <span class="red">6.</span> Enjoy the community, because it's
+
+            <img src="images/awesome.gif" alt="awesome" />
+
+            ----
+
+            # Final Thoughts
+
+            * Version pinning: sometimes a specific version is needed, and need to pin it in the `requirements` file:
+              ```console
+              $ cat requirements.txt
+              requests==2.18.4
+              Sphinx=1.7.1
+              ```
+            * There are some other more actual tools we need to consider in: [pipenv](https://docs.pipenv.org/) and [pipsi](https://github.com/mitsuhiko/pipsi).
+
+            ----
+
+            # Resources
+
+            * pip
+             * [Pip Documentation](https://pip.pypa.io/en/stable/)
+             * [Pip in PyPi](https://pypi.python.org/pypi/pip)
+             * [Github page of pip](https://github.com/pypa/pip)
+             * [Python Packaging Authority](https://www.pypa.io/en/latest/)
+             * [Python Packaging User Guide](https://packaging.python.org/)
+
+            * iscowalive
+             * [Code repository](https://github.com/cowlab-lugo/iscowalive)
+             * [Documentation](http://iscowalive.readthedocs.io/en/latest/)
+             * [Pypi](https://pypi.org/project/iscowalive/)
+             * [GitHub Issues](https://github.com/cowlab-lugo/iscowalive/issues)
+
+            ----
+
+            <!-- .slide: data-background="#242177" -->
+            <img class="plain" src="images/cowlab.png" alt="cowlab - paquetes">
+
+            # Thanks!
+
+            </script>
+        </section>
+
+    </div>
+</div>
+
+<script src="js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    Reveal.initialize({
+        history: true,
+
+        dependencies: [
+            { src: 'js/marked.js' },
+            { src: 'js/markdown.min.js' },
+            { src: 'js/highlight.min.js',
+              async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ],
+
+        width: "60%",
+        height: "100%",
+        margin: 0,
+        minScale: 1,
+        maxScale: 1,
+        controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide'
+    });
+</script>
+</body>
+</html>

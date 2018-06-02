@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <h1 class="h3 mb-3 font-weight-normal">
+    is cow alive?
+    {% if ica == "OK" %}
+        <div><button type="button" class="btn btn-success">OK</button></div>
+    {% endif %}
+    {% if ica == "KO" %}
+        <div><button type="button" class="btn btn-danger">KO</button></div>
+    {% endif %}
+  </h1>
+  <label for="url" class="sr-only">url</label>
+  <input id="url" name="url" class="form-control" placeholder="http://" required autofocus>
+
+{% endblock %}

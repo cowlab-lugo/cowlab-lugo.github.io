@@ -1,0 +1,16 @@
+{
+  "name": "iscowalive",
+  "version": "1.0.0",
+  "description": "Returns true or false depending on whether the HTTP response status is 200",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cowlab",
+    "lugo",
+    "http"
+  ],
+  "author": "Andrés Maneiro <andres.maneiro@gmail.com>",
+  "license": "GPL-3.0"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "cowlab/project",
+    "description": "Cowlab awesome project",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "cowlab/checker": "dev-master"
+    },
+    "scripts": {
+        "server": "php -S localhost:8889 -t public"
+    }
+}

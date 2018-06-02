@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cuando VSCode es cosa de dos</title>
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/black.min.css">
+    <link rel="stylesheet" href="css/zenburn.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-markdown
+            data-separator="^\n----\n$"
+            data-separator-vertical="^\n---\n$">
+            <script type="text/template">
+            <!-- .slide: data-background="#242177" -->
+            <img class="plain" src="images/cowlab.png" alt="cowlab - paquetes">
+
+            Cowlab Talks
+
+            ### Cuando VSCode es cosa de dos
+
+            [@dieg0v](https://twitter.com/dieg0v) - [@oscarmlage](https://twitter.com/oscarmlage)
+
+            ----
+
+            ## IDE
+
+            * Significa: Entorno de Desarrollo Integrado
+            * En plata: Editor + compilador + depurador en una misma interfaz gráfica
+            * IDE != Editor de código
+
+            ----
+
+            ## Editor de código fuente
+
+            * Un editor de código fuente no es más que un editor de texto diseñado
+            específicamente para editar código fuente, con ciertas características
+            específicas de ese trabajo.
+            * ¿Por qué muchas veces llamamos IDE al editor? Ni idea, pero está mal
+            dicho.
+            <!-- .element: class="fragment" data-fragment-index="0" -->
+
+            ----
+
+            ## Editores populares
+
+            * vi, vim, emacs, gedit, sublime, atom, eclipse, netbeans,
+            visual studio code (aka vscode)
+            * Nota: no entrar en flames si me he dejado alguno **importante** en
+            el tintero.
+
+            ----
+
+            ## Features indispensables
+
+            * Syntax highlight
+            * Autocomplete
+            * Bracket matching
+            * Project manager
+            * File system explorer
+            * Manage multiple open files (tabs, buffers, panes...)
+            * Much more: Linter, code folding, diffs, source control status
+            (git, hg...)
+            * ...
+            * Pair programming, why not?
+            <!-- .element: class="fragment" data-fragment-index="0" -->
+
+            ----
+
+            ## Taller de features indispensables
+
+            * Enseñar en `VSCode` cada una de estas features que hacen la vida del
+            programador algo más agradable y ameno.
+
+            ----
+
+            ## Pair programming, ¿qué es?
+
+            * Programación en pareja, como su nombre indica... requiere `mínimo 2
+            programadores`.
+
+            * Normalmente uno codifica (`controlador`, maneja el teclado) mientras
+            todos, en equipo, combinan sus habilidades para avanzar en la
+            resolución del problema.
+
+            ----
+
+            ## Ventajas (1)
+
+            * `Más disciplina`: Los descansos suelen ser menores...
+              * A no ser que a ambos les guste (y tengan a mano) el futbolín,
+              ping-pong...
+            * `Mejor código`: Menor probabilidad de fallos, malos diseños, etc..
+            * `Flujo de trabajo constante`: menores interrupciones, más sencillo
+            retomar donde se había dejado...
+            * `Más positivo`: Moralmente, para muchos programadores es más ameno
+            practicar pair programming que programar sólos.
+
+            ---
+
+            ## Ventajas (y 2)
+
+            * `Enseñanza`: Todos poseen conocimientos que los otros no, con este
+            tipo de práctica todos (hasta los novatos) aprenden.
+            * `Menos equipos`: Se puede reducir el hardware a la mitad :-D
+
+            ----
+
+            ## Inconvenientes
+
+            * Desarrolladores expertos pueden encontrar tedioso enseñar a alguien
+            que no le aporte conocimientos, pro eso es importante hacer parejas
+            que se complementen.
+            * Muchos "jefes" lo ven como más costoso puesto que se asignan el
+            doble de recursos a la misma tarea.
+            * Si la empresa en cuestión se basa en el `teletrabajo` es complicado
+            la práctica del pair programming...
+              * **ERA COMPLICADO** hasta `VScode`. Vamos a comprobarlo
+
+            ----
+
+            ## ¿Y VSCode en qué nos ayuda?
+
+            * Con `VSCode` el concepto de pair programming cambia un poco:
+              * Puede haber un sólo controlador (el que teclea) y varios miembros
+              más en el equipo.
+              * Pero también pueden ser varios controladores (múltiples
+              cursores), lo que lo hacen una opción mucho más interesante que
+              sus alternativas (shared tmux over ssh, por ejemplo).
+
+            ----
+
+            ## Taller de pair programming
+
+            * Enseñar en `VSCode` como podemos practicar pair programming:
+              * Abrir varios archivos y programar de forma conjunta
+              * Pedir la atención del otro
+              * Abrir puerto para compartir navegador
+              * ...
+
+            ----
+
+            ## Puntos que todavía no resuelve VSCode
+
+            * Chat: `irc`, `slack`, `telegram` o similares
+            * Voz: `Skype`, `Hangouts`, `Team Speak`...
+            * Share browser: `Skype`, `TeamViewer`, `VNC`...
+
+            ----
+
+            ## Recursos varios
+
+            * [Descarga Visual Studio Code](https://code.visualstudio.com/download)
+            * [Pair Programming, AgileAlliance](https://www.agilealliance.org/glossary/pairing/)
+            * [Visual Studio Feaures, video](https://www.youtube.com/watch?v=xYyPAUukFfg)
+
+            ----
+
+            <!-- .slide: data-background="#242177" -->
+            <img class="plain" src="images/cowlab.png" alt="cowlab">
+
+            # Thanks!
+
+            </script>
+        </section>
+
+    </div>
+</div>
+
+<script src="js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    Reveal.initialize({
+        history: true,
+
+        dependencies: [
+            { src: 'js/marked.js' },
+            { src: 'js/markdown.min.js' },
+            { src: 'js/highlight.min.js',
+              async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ],
+
+        width: "60%",
+        height: "100%",
+        margin: 0,
+        minScale: 1,
+        maxScale: 1,
+        controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide'
+    });
+</script>
+</body>
+</html>

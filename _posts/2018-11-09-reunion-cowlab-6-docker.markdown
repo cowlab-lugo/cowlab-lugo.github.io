@@ -15,7 +15,7 @@ Esta vez [Óscar](https://oscarmlage.com/) estuvo hablando sobre `Docker`, insta
 
 Hemos visto qué es `Docker`, para qué sirve, las principales diferencias con las máquinas virtuales, la arquitectura del servicio, instalación del mismo, el esqueleto de un `Dockerfile` muy básico, cómo crear una imagen (`build`), cómo ejecutarla (`run`), algo sobre volúmenes, partes variables e invariables, `docker exec` y `docker logs`. Y alguna otra conclusión que hemos ido sacando entre todos.
 
-[A continuación](http://www.sond3.com/) un listado con enlaces relacionados:
+A continuación un listado con enlaces relacionados:
 
 * [Slides](http://static.userlinux.net/cowlab/docker/)
 * [Docker CE](https://docs.docker.com/install/)

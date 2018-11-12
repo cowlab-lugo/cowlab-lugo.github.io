@@ -17,7 +17,7 @@ Hemos visto qué es `Docker`, para qué sirve, las principales diferencias con l
 
 [A continuación](http://www.sond3.com/) un listado con enlaces relacionados:
 
-* [Slides](https://raw.githubusercontent.com/cowlab-lugo/cowlab-lugo.github.io/master/_data/meetings/20181109/slides/docker/index.html)
+* [Slides](http://static.userlinux.net/cowlab/docker/)
 * [Docker CE](https://docs.docker.com/install/)
 * [Docker Docs](https://docs.docker.com/)
 * [Docker Hub](https://hub.docker.com)

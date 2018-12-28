@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "2018"
+tag:    "2018"
+date:   2018-12-28 13:30:12 +0100
+categories: meetings
+---
+# Un poco de historia
+
+En septiembre de 2017 hemos decidido retomar este movimiento que en su día se bautizó como `cowlab`, aunque la historia viene de más atrás...
+
+
+## 2012
+
+Hace ya algunos años, finales de 2011 y principios de 2012, se empezó a trabajar en una idea de reuniones más o menos periódicas relacionadas con el mundo de la programación y las nuevas tecnologías basados en la ciudad de Lugo.
+
+Durante el año 2012 se celebraron varias reuniones y había una lista de correo más o menos activa en la que comentábamos novedades tecnológicas y movimientos políticos, sociales y/o culturales que afectaban en mayor o menor medida a la ciudad.
+
+Se bautizó el movimiento como `cowlab` y gracias a la colaboración de varios de los `hacktivistas` hicimos una web para dar a conocer dicho movimiento. Entraron nuevos miembros y se siguió avanzando, sin embargo el parón de verano nos lo tomamos demasiado en serio y no volvimos a tener actividad ese año.
+
+## 2013
+
+Finales de 2012 y, en general todo 2013 fue un año duro para la organización, con nuevos proyectos y nuevas responsabilidades. Como apenas había tiempo hubo consenso en hacer un parón hasta nueva orden. Nueva orden que llegó 4 años más tarde.
+
+## 2017
+
+En Junio de 2017 se reinició actividad, dándole otra intentona con un enfoque más sencillo, las premisas para esta nueva temporada eran algo así como:
+
+* Cervezas y lo que surja.
+* Organizar alguna charla light (el formato lightning talk sonaba interesante).
+* Dejar el politiqueo de lado y centrarse en lo `tech`, que es lo que nos gusta.
+
+La idea tuvo buena aceptación pero había un gran hándicap del que ya teníamos experiencia: el verano. Así que decidimos madurar la idea y empezar "a la vuelta".
+
+Dicho y hecho, en septiembre hicimos el primer encuentro ([#1](https://cowlab-lugo.github.io/meetings/2017/09/22/reunion-cowlab-1.html)) de la nueva temporada y en noviembre el segundo ([#2](https://cowlab-lugo.github.io/meetings/2017/11/17/reunion-cowlab-2.html)). Incluso organizamos una salida al [VoiceKit de Lalín](https://www.farodevigo.es/portada-deza-tabeiros-montes/2017/12/16/curso-iniciacion-voice-kit-aula/1804792.html), pero con las Navidades a la vuelta de la esquina no había tiempo a más
+
+## 2018
+
+El 2018 tenía que ser el año de la consolidación. Y no estuvo mal. No hemos conseguido la periodicidad que nos habíamos planteado (mensual), pero 4 encuentros son un buen número. Este año que cierra hemos hablado de:
+
+* ([#3](https://cowlab-lugo.github.io/meetings/2018/03/03/reunion-cowlab-3.html)) Gestores de paquetes.
+* ([#4](https://cowlab-lugo.github.io/meetings/2018/05/10/reunion-cowlab-4.html)) Reunión informal, `cañas around`, hablando de la posibilidad de convertirnos en GDG.
+* ([#5](https://cowlab-lugo.github.io/meetings/2018/06/01/reunion-cowlab-5.html)) Cuando VSCode es cosa de dos (pair programming).
+* ([#6](https://cowlab-lugo.github.io/meetings/2018/11/10/reunion-cowlab-6-docker.html)) Docker, instalación y primeros pasos.
+
+Seguimos con las mismas intenciones de organizar reuniones los primeros viernes de cada mes así que vamos a ver qué nos depara este 2019. Preparémonos para entrar en él con buen pie.
+
+Gracias a todos los que hacéis que `cowlab` siga con actividad y, por supuesto, ¡felices fiestas!.

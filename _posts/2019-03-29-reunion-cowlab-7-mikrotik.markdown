@@ -13,9 +13,9 @@ Hemos vuelto a la carga, parece que la primera del año se ha hecho esperar pero
 
 [Juan](https://twitter.com/diazjc) nos introdujo al mundo de los routers [Mikrotik](https://mikrotik.com/) con una fantástica charla/demo donde nos quedamos boquiabiertos viendo las bondades de estos cacharros.
 
-Hemos visto desde cosas tan básicas como uso del interfaz administrativo de `RouterOS` tanto vía web como a través de la aplicación `Winbox`, hasta la configuración de una `VPN` a través de routers físicos que teníamos allí y otros montados de forma virtual en `EC2` de Amazon.
+Hemos visto desde cosas tan básicas como uso del interfaz administrativo de `RouterOS` tanto vía web como a través de la aplicación `Winbox`, hasta la configuración de una `VPN` a través de routers físicos que teníamos allí y otros de forma virtual en `EC2` de Amazon.
 
-Un mundo nuevo para la mayoría de los asistentes, esperamos que sea la primera de muchas más sobre esta temática. Agradecer de forma infinita tanto a Juan por el currazo, a [Comunitea](https://comunitea.com) por habernos acogido con los brazos abiertos en su oficina y a los asistentes que han hecho realidad esta séptima reunión.
+Un mundo nuevo para la mayoría de los asistentes, esperamos que sea la primera de muchas más sobre esta temática. Agradecer de forma infinita tanto a Juan por el currazo, como a [Comunitea](https://comunitea.com) por habernos acogido con los brazos abiertos en su oficina. Y por supuesto a los asistentes que han hecho realidad esta séptima reunión.
 
 ¡Nos vemos en la próxima!
 

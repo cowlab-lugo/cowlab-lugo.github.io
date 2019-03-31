@@ -7,6 +7,8 @@ categories: meetings
 ---
 # Reunión cowlab - 7
 
+<img src="https://raw.githubusercontent.com/cowlab-lugo/cowlab-lugo.github.io/master/_data/meetings/20190329/photos/IMG_0951.jpg" style="width: 100%" alt="Taller Mikrotik" />
+
 Hemos vuelto a la carga, parece que la primera del año se ha hecho esperar pero al fin nos hemos puesto de acuerdo para empezar este 2019 como se merece.
 
 [Juan](https://twitter.com/diazjc) nos introdujo al mundo de los routers [Mikrotik](https://mikrotik.com/) con una fantástica charla/demo donde nos quedamos boquiabiertos viendo las bondades de estos cacharros.
